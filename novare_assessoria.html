@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Novare Soluções Financeiras – Livre-se das Dívidas que Não Têm Fim</title>
+<link rel="icon" type="image/jpeg" href="favicon.jpg"/>
+<link rel="shortcut icon" href="favicon.jpg"/>
+<link rel="canonical" href="https://www.novareassessoria.com.br/"/>
+<meta name="description" content="A Novare Soluções Financeiras identifica cobranças ilegais no seu contrato e negocia a saída que cabe no seu bolso. Consulta gratuita para financiamentos e empréstimos em todo o Brasil."/>
+<meta property="og:title" content="Novare Soluções Financeiras – Saia das Dívidas com Quem Entende do Assunto"/>
+<meta property="og:description" content="Consulta gratuita. Identificamos cobranças ilegais e negociamos com o banco por você. Atendimento 100% online em todo o Brasil."/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="pt_BR"/>
+<meta property="og:url" content="https://www.novareassessoria.com.br/"/>
+<meta property="og:image" content="https://www.novareassessoria.com.br/novare-assessoria-logo.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.10/dist/dotlottie-wc.js" type="module"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Novare Soluções Financeiras",
+  "url": "https://www.novareassessoria.com.br/",
+  "logo": "https://www.novareassessoria.com.br/novare-assessoria-logo.png",
+  "telephone": "+55-11-92170-4799",
+  "email": "solucoesnovare@gmail.com",
+  "description": "Auditoria e renegociação de contratos financeiros. Identificamos cobranças ilegais em financiamentos e empréstimos e negociamos com o banco por você.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Artur de Queirós, 287",
+    "addressLocality": "Santo André",
+    "addressRegion": "SP",
+    "postalCode": "09015-510",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  "sameAs": [
+    "https://instagram.com/novaresolucoes",
+    "https://wa.me/5511921704799"
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --brand:           #FFEA00;
+    --brand-dim:       #E6D200;
+    --brand-fg:        #0a0a0a;
+
+    --bg:              #ffffff;
+    --fg:              #0a0a0a;
+
+    --card:            #ffffff;
+    --muted:           #f4f4f5;
+    --muted-fg:        #71717a;
+
+    --border:          #e4e4e7;
+    --input-border:    #d4d4d8;
+
+    --surface:         #111111;
+    --surface-2:       #1a1a1a;
+    --surface-3:       #242424;
+
+    --radius-sm:  4px;
+    --radius:     8px;
+    --radius-md:  10px;
+    --radius-lg:  14px;
+
+    --shadow-sm:  0 1px 2px rgba(0,0,0,.05);
+    --shadow:     0 1px 3px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.04);
+    --shadow-md:  0 4px 6px -1px rgba(0,0,0,.07),0 2px 4px -1px rgba(0,0,0,.04);
+    --shadow-lg:  0 10px 24px -3px rgba(0,0,0,.09),0 4px 8px -2px rgba(0,0,0,.04);
+  }
+
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+  body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--fg);background:var(--bg);}
+  a{text-decoration:none;color:inherit;}
+  img{display:block;object-fit:contain;}
+
+  /* ─── HEADER ─── */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:1000;
+    background:rgba(10,10,10,.95);
+    backdrop-filter:blur(16px) saturate(180%);
+    -webkit-backdrop-filter:blur(16px) saturate(180%);
+    display:flex;align-items:center;justify-content:space-between;
+    padding:0 5%;height:100px;
+    border-bottom:1px solid rgba(255,255,255,.07);
+  }
+  .logo img{height:80px;width:auto;display:block;filter:brightness(1.8); transition: filter 0.3s ease;}
+  .logo img:hover{filter:brightness(2.2);}
+
+  .header-nav{display:flex;align-items:center;gap:2px;}
+  .header-nav a{
+    color:rgba(255,255,255,.6);font-size:.875rem;font-weight:500;
+    padding:6px 12px;border-radius:var(--radius-sm);
+    transition:color .15s,background .15s;
+  }
+  .header-nav a:hover{color:#fff;background:rgba(255,255,255,.07);}
+
+  .header-right{display:flex;align-items:center;gap:12px;}
+
+  .btn-header{
+    display:inline-flex;align-items:center;gap:7px;
+    background:var(--brand);color:var(--brand-fg);
+    padding:8px 16px;border-radius:var(--radius);
+    font-size:.8125rem;font-weight:700;letter-spacing:-.01em;
+    transition:background .15s;white-space:nowrap;
+  }
+  .btn-header:hover{background:var(--brand-dim);}
+  .btn-header svg{width:14px;height:14px;fill:currentColor;flex-shrink:0;}
+
+  /* Hamburger */
+  .hamburger{
+    display:none;flex-direction:column;gap:5px;
+    cursor:pointer;padding:6px;background:none;border:none;
+  }
+  .hamburger span{
+    width:22px;height:2px;background:rgba(255,255,255,.75);
+    border-radius:2px;transition:all .25s;display:block;
+  }
+  .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+  .hamburger.open span:nth-child(2){opacity:0;transform:translateX(-4px);}
+  .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
+
+  .mobile-menu{
+    display:none;position:fixed;top:100px;left:0;right:0;
+    background:#0a0a0a;border-bottom:1px solid rgba(255,255,255,.08);
+    padding:16px 5% 20px;z-index:999;
+    flex-direction:column;gap:2px;
+  }
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{
+    color:rgba(255,255,255,.7);font-size:.9375rem;font-weight:500;
+    padding:11px 12px;border-radius:var(--radius);transition:background .15s,color .15s;
+  }
+  .mobile-menu a:hover{background:rgba(255,255,255,.07);color:#fff;}
+  .mobile-menu .btn-mobile{
+    background:var(--brand);color:var(--brand-fg);
+    font-weight:700;justify-content:center;display:flex;
+    align-items:center;gap:7px;margin-top:6px;
+  }
+
+  /* ─── HERO ─── */
+  .hero{
+    background:var(--surface);
+    background-image:
+      radial-gradient(ellipse 90% 55% at 50% -10%,rgba(232,184,0,.13) 0%,transparent 65%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='0' cy='0' r='.8' fill='rgba(255,255,255,.03)'/%3E%3Ccircle cx='40' cy='0' r='.8' fill='rgba(255,255,255,.03)'/%3E%3Ccircle cx='0' cy='40' r='.8' fill='rgba(255,255,255,.03)'/%3E%3Ccircle cx='40' cy='40' r='.8' fill='rgba(255,255,255,.03)'/%3E%3C/svg%3E");
+    min-height:100vh;
+    display:flex;align-items:center;
+    padding:100px 5% 80px;
+  }
+  .hero-wrap{
+    max-width:1400px;margin:0 auto;width:100%;
+    display:grid;grid-template-columns:1fr 600px;align-items:center;gap:40px;
+    text-align:left;
+  }
+  @media(max-width:992px){
+    .hero-wrap{grid-template-columns:1fr;text-align:center;gap:40px;}
+    .hero-right{order:-1; display: flex; justify-content: center; margin-bottom: 20px;}
+    .hero-right dotlottie-wc{width:320px !important; height:320px !important;}
+  }
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:7px;
+    background:rgba(232,184,0,.09);border:1px solid rgba(232,184,0,.22);
+    color:var(--brand);padding:5px 12px;border-radius:var(--radius-sm);
+    font-size:.6875rem;font-weight:700;letter-spacing:.06em;
+    text-transform:uppercase;margin-bottom:22px;
+  }
+  .hero-badge-dot{
+    width:6px;height:6px;border-radius:50%;background:var(--brand);
+    animation:blink 2.2s ease-in-out infinite;
+  }
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+
+  .hero h1{
+    font-size:clamp(2.1rem,3.8vw,3.1rem);font-weight:800;color:#fff;
+    line-height:1.17;letter-spacing:-.025em;margin-bottom:18px;
+  }
+  .hero h1 .hl{color:var(--brand);}
+  .hero-sub{
+    font-size:.9375rem;color:rgba(255,255,255,.55);line-height:1.75;
+    margin:0 0 32px;max-width:520px;
+  }
+  .hero-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;}
+  @media(max-width:992px){
+    .hero-sub{margin: 0 auto 32px;}
+    .hero-ctas{justify-content:center;}
+  }
+
+  .btn-primary{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--brand);color:var(--brand-fg);
+    padding:11px 22px;border-radius:var(--radius);
+    font-size:.9375rem;font-weight:700;letter-spacing:-.01em;
+    transition:background .15s,transform .15s;
+  }
+  .btn-primary:hover{background:var(--brand-dim);transform:translateY(-1px);}
+  .btn-primary svg{width:16px;height:16px;fill:currentColor;flex-shrink:0;}
+
+  .btn-ghost{
+    display:inline-flex;align-items:center;gap:6px;
+    background:transparent;color:rgba(255,255,255,.75);
+    padding:11px 22px;border-radius:var(--radius);
+    font-size:.9375rem;font-weight:500;
+    border:1px solid rgba(255,255,255,.14);
+    transition:border-color .15s,color .15s,background .15s;
+  }
+  .btn-ghost:hover{border-color:rgba(255,255,255,.3);color:#fff;background:rgba(255,255,255,.04);}
+
+  .hero-trust{display:flex;gap:18px;flex-wrap:wrap;}
+  @media(max-width:992px){
+    .hero-trust{justify-content:center;}
+  }
+  .hero-trust-item{
+    display:flex;align-items:center;gap:6px;
+    font-size:.8rem;color:rgba(255,255,255,.38);font-weight:500;
+  }
+  .hero-trust-item svg{width:13px;height:13px;fill:var(--brand);flex-shrink:0;opacity:.8;}
+
+  /* Audit preview card */
+  .audit-card{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:var(--radius-lg);padding:24px;
+  }
+  .audit-card-hdr{
+    display:flex;align-items:center;gap:10px;
+    margin-bottom:18px;padding-bottom:16px;
+    border-bottom:1px solid rgba(255,255,255,.07);
+  }
+  .audit-card-icon{
+    width:34px;height:34px;border-radius:var(--radius);
+    background:rgba(232,184,0,.14);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .audit-card-icon svg{width:16px;height:16px;fill:var(--brand);}
+  .audit-card-title{font-size:.8125rem;font-weight:700;color:rgba(255,255,255,.9);letter-spacing:-.01em;}
+  .audit-card-sub{font-size:.6875rem;color:rgba(255,255,255,.38);margin-top:2px;}
+
+  .audit-row{
+    display:flex;align-items:center;gap:10px;
+    padding:9px 0;border-bottom:1px solid rgba(255,255,255,.05);
+  }
+  .audit-row:last-of-type{border-bottom:none;}
+  .audit-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+  .ad-red{background:#f87171;}
+  .ad-yellow{background:var(--brand);}
+  .ad-green{background:#4ade80;}
+  .audit-lbl{font-size:.8rem;color:rgba(255,255,255,.55);flex:1;line-height:1.4;}
+  .audit-val{font-size:.8rem;font-weight:700;color:rgba(255,255,255,.88);white-space:nowrap;}
+
+  .audit-result-box{
+    margin-top:14px;padding:14px 16px;
+    background:rgba(232,184,0,.1);border:1px solid rgba(232,184,0,.2);
+    border-radius:var(--radius);text-align:center;
+  }
+  .audit-result-lbl{font-size:.6875rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:3px;}
+  .audit-result-val{font-size:1.5rem;font-weight:800;color:var(--brand);letter-spacing:-.03em;}
+
+  .hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px;}
+  .hstat{
+    background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);
+    border-radius:var(--radius);padding:13px 14px;
+  }
+  .hstat-val{font-size:1.125rem;font-weight:800;color:#fff;letter-spacing:-.02em;}
+  .hstat-lbl{font-size:.6875rem;color:rgba(255,255,255,.38);margin-top:2px;font-weight:500;}
+
+  /* ─── TRUST BAR ─── */
+  .trust-bar{
+    background:var(--surface-2);
+    border-top:1px solid rgba(255,255,255,.06);
+    border-bottom:1px solid rgba(255,255,255,.06);
+  }
+  .trust-bar-inner{
+    max-width:1140px;margin:0 auto;
+    display:grid;grid-template-columns:repeat(4,1fr);
+  }
+  .trust-item{
+    text-align:center;padding:22px 16px;
+    border-right:1px solid rgba(255,255,255,.06);
+  }
+  .trust-item:last-child{border-right:none;}
+  .trust-num{font-size:1.375rem;font-weight:800;color:var(--brand);letter-spacing:-.025em;}
+  .trust-label{font-size:.75rem;color:rgba(255,255,255,.38);margin-top:3px;font-weight:500;}
+
+  /* ─── SECTION COMMONS ─── */
+  section{padding:96px 5%;}
+  .sec-inner{max-width:1140px;margin:0 auto;}
+  .sec-head{text-align:center;margin-bottom:56px;}
+
+  .sec-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.6875rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--muted-fg);margin-bottom:10px;
+  }
+  .sec-eyebrow::before,.sec-eyebrow::after{
+    content:'';flex:0 0 18px;height:1px;background:currentColor;opacity:.6;
+  }
+
+  h2.stitle{
+    font-size:clamp(1.45rem,2.4vw,2rem);font-weight:800;color:#111;
+    letter-spacing:-.025em;line-height:1.25;margin-bottom:10px;
+  }
+  h2.stitle-w{color:#fff;}
+  .ssub{font-size:.9375rem;color:var(--muted-fg);line-height:1.7;max-width:540px;}
+  .ssub.cx{margin:0 auto;text-align:center;}
+
+  /* ─── SEÇÃO DOR ─── */
+  .dor{background:var(--muted);}
+  .dor-grid{
+    max-width:1100px;margin:0 auto;
+    display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;
+  }
+  .dor-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.6875rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--muted-fg);margin-bottom:10px;
+  }
+  .dor-eyebrow::before{content:'';flex:0 0 16px;height:1px;background:currentColor;opacity:.6;}
+
+  .dor-list{list-style:none;margin-top:24px;}
+  .dor-list li{
+    display:flex;align-items:flex-start;gap:12px;
+    padding:13px 0;border-bottom:1px solid var(--border);
+    font-size:.9375rem;color:#374151;line-height:1.55;
+  }
+  .dor-list li:last-child{border-bottom:none;}
+  .dor-ic{
+    width:22px;height:22px;border-radius:var(--radius-sm);
+    background:#fef3c7;display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;margin-top:1px;
+  }
+  .dor-ic svg{width:11px;height:11px;}
+
+  .dor-box{
+    background:var(--card);border:1px solid var(--border);
+    border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-md);
+  }
+  .dor-box h3{
+    font-size:1.0625rem;font-weight:700;color:#111;
+    margin-bottom:8px;letter-spacing:-.02em;line-height:1.4;
+  }
+  .dor-box > p{color:var(--muted-fg);font-size:.875rem;line-height:1.65;margin-bottom:24px;}
+
+  .dor-form{display:flex;flex-direction:column;gap:14px;}
+  .dor-form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .form-field{display:flex;flex-direction:column;gap:5px;}
+  .form-label{font-size:.8rem;font-weight:600;color:#374151;letter-spacing:-.01em;}
+
+  .form-input,.form-select{
+    width:100%;padding:9px 13px;border-radius:var(--radius);
+    border:1px solid var(--input-border);font-size:.875rem;
+    font-family:inherit;color:var(--fg);background:#fff;
+    transition:border-color .15s,box-shadow .15s;outline:none;line-height:1.5;
+  }
+  .form-input:focus,.form-select:focus{
+    border-color:#a1a1aa;box-shadow:0 0 0 3px rgba(0,0,0,.05);
+  }
+  .form-input::placeholder{color:#a1a1aa;}
+  .form-select{
+    appearance:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23a1a1aa' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 12px center;padding-right:36px;
+  }
+  .btn-form{
+    width:100%;padding:11px;border-radius:var(--radius);
+    background:var(--fg);color:#fff;font-size:.9375rem;font-weight:700;
+    border:none;cursor:pointer;font-family:inherit;
+    transition:background .15s;letter-spacing:-.01em;
+  }
+  .btn-form:hover{background:#333;}
+  .dor-form-note{
+    font-size:.75rem;color:var(--muted-fg);text-align:center;
+    display:flex;align-items:center;gap:5px;justify-content:center;
+  }
+  .dor-form-note svg{width:12px;height:12px;fill:var(--muted-fg);}
+  .dor-form-success{display:none;text-align:center;padding:24px 0;}
+  .dor-form-success p{margin-top:10px;font-weight:600;color:#111;font-size:.9375rem;}
+
+  @media(max-width:560px){.dor-form-row{grid-template-columns:1fr;}}
+
+  /* ─── COMO FUNCIONA ─── */
+  .como{background:#fff;}
+  .steps{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+    max-width:880px;margin:0 auto;position:relative;
+  }
+  .steps::before{
+    content:'';position:absolute;
+    top:26px;left:calc(16.67% + 16px);right:calc(16.67% + 16px);
+    height:1px;background:var(--border);z-index:0;
+  }
+  .step{text-align:center;padding:0 24px;position:relative;z-index:1;}
+  .step-num{
+    width:52px;height:52px;border-radius:50%;
+    background:#fff;border:1.5px solid var(--border);
+    color:#111;font-size:.9375rem;font-weight:700;
+    display:flex;align-items:center;justify-content:center;
+    margin:0 auto 20px;position:relative;z-index:2;
+    transition:border-color .2s,background .2s,color .2s;
+  }
+  .step:hover .step-num{border-color:var(--brand);background:var(--brand);color:#000;}
+  .step h3{font-size:.9375rem;font-weight:700;color:#111;margin-bottom:8px;letter-spacing:-.01em;}
+  .step p{font-size:.875rem;color:var(--muted-fg);line-height:1.65;}
+
+  /* ─── ESPECIALIDADES ─── */
+  .espec{background:var(--muted);}
+  .cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1000px;margin:0 auto;}
+  .card-flip{perspective:1000px;height:340px;}
+  .card-inner{
+    width:100%;height:100%;position:relative;
+    transform-style:preserve-3d;
+    transition:transform .5s cubic-bezier(.4,0,.2,1);
+    border-radius:var(--radius-lg);
+  }
+  .card-flip:hover .card-inner,.card-flip.flipped .card-inner{transform:rotateY(180deg);}
+  .card-front,.card-back{
+    position:absolute;inset:0;backface-visibility:hidden;
+    border-radius:var(--radius-lg);overflow:hidden;
+  }
+  .card-front img{width:100%;height:100%;object-fit:cover;}
+  .card-front-ov{
+    position:absolute;bottom:0;left:0;right:0;
+    background:linear-gradient(to top,rgba(10,10,10,.92) 0%,transparent 100%);
+    padding:22px;color:#fff;
+  }
+  .card-front-ov h3{font-size:.9375rem;font-weight:700;letter-spacing:-.01em;}
+  .card-front-ov p{font-size:.8rem;opacity:.65;margin-top:3px;}
+
+  .card-back{
+    transform:rotateY(180deg);
+    background:var(--surface-2);
+    display:flex;flex-direction:column;justify-content:center;
+    padding:28px 24px;color:#fff;
+    border:1px solid rgba(232,184,0,.18);
+  }
+  .card-back h3{font-size:.9375rem;font-weight:700;margin-bottom:10px;color:var(--brand);letter-spacing:-.01em;}
+  .card-back p{font-size:.875rem;line-height:1.7;color:rgba(255,255,255,.7);}
+  .card-back .cbtn{
+    display:inline-flex;align-items:center;gap:6px;
+    margin-top:18px;background:var(--brand);color:#000;
+    padding:8px 16px;border-radius:var(--radius);
+    font-size:.8125rem;font-weight:700;align-self:flex-start;
+    transition:background .15s;
+  }
+  .card-back .cbtn:hover{background:var(--brand-dim);}
+
+  /* ─── MISSÃO ─── */
+  .missao{background:#fff;}
+  .missao-inner{max-width:700px;margin:0 auto;text-align:center;}
+  .missao-quote{
+    display:inline-block;
+    font-size:1.0625rem;color:#374151;line-height:1.85;
+    position:relative;padding:0 12px;
+  }
+  .missao-quote::before{
+    content:'\201C';font-size:5rem;color:var(--brand);opacity:.35;
+    position:absolute;top:-16px;left:-6px;font-family:Georgia,serif;line-height:1;
+  }
+  .missao-quote::after{
+    content:'\201D';font-size:5rem;color:var(--brand);opacity:.35;
+    position:absolute;bottom:-38px;right:-18px;font-family:Georgia,serif;line-height:1;
+  }
+  .missao-divider{width:36px;height:3px;background:var(--brand);border-radius:2px;margin:28px auto;}
+
+  /* ─── POR QUE ─── */
+  .porq{background:var(--muted);}
+  .porq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1000px;margin:0 auto;}
+  .porq-card{
+    background:#fff;border:1px solid var(--border);
+    border-radius:var(--radius-lg);padding:26px 22px;
+    transition:border-color .2s,box-shadow .2s;
+  }
+  .porq-card:hover{border-color:#d4a80e;box-shadow:var(--shadow-md);}
+  .porq-icon{
+    width:42px;height:42px;border-radius:var(--radius);
+    background:rgba(232,184,0,.1);
+    display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+  }
+  .porq-icon svg{width:20px;height:20px;}
+  .porq-card h3{font-size:.9375rem;font-weight:700;color:#111;margin-bottom:7px;letter-spacing:-.01em;}
+  .porq-card p{font-size:.875rem;color:var(--muted-fg);line-height:1.65;}
+
+  /* ─── DEPOIMENTOS ─── */
+  .depo{background:#fff;}
+  .depo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1000px;margin:0 auto;}
+  .depo-card{
+    background:#fff;border:1px solid var(--border);
+    border-radius:var(--radius-lg);padding:22px;
+    transition:border-color .2s,box-shadow .2s;
+  }
+  .depo-card:hover{border-color:#e8cc5a;box-shadow:var(--shadow-md);}
+  .depo-card.feat{border:2px solid var(--brand);position:relative;background:#fffdf0;}
+  .feat-badge{
+    position:absolute;top:-11px;left:18px;
+    background:var(--brand);color:#000;
+    font-size:.6875rem;font-weight:700;padding:3px 10px;
+    border-radius:var(--radius-sm);white-space:nowrap;
+    letter-spacing:.04em;text-transform:uppercase;
+  }
+  .depo-hdr{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+  .depo-av{
+    width:38px;height:38px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:.875rem;font-weight:700;color:#fff;flex-shrink:0;
+  }
+  .depo-name{font-weight:700;font-size:.875rem;color:#111;letter-spacing:-.01em;}
+  .depo-meta{font-size:.75rem;color:var(--muted-fg);margin-top:1px;}
+  .stars{color:var(--brand);font-size:.8rem;margin-bottom:7px;letter-spacing:1px;}
+  .depo-saving{
+    display:inline-block;background:rgba(232,184,0,.12);color:#78590a;
+    font-size:.8rem;font-weight:700;padding:4px 9px;
+    border-radius:var(--radius-sm);margin-bottom:10px;
+  }
+  .depo-txt{font-size:.875rem;color:#4b5563;line-height:1.75;font-style:italic;}
+
+  /* ─── NÚMEROS ─── */
+  .nums{background:var(--surface-2);}
+  .nums-inner{max-width:1000px;margin:0 auto;}
+  .nums .stitle-w{text-align:center;margin-bottom:6px;}
+  .nums .ssub.cx{color:rgba(255,255,255,.45);margin-bottom:44px;}
+  .nums-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.07);
+    border-radius:var(--radius-lg);overflow:hidden;
+  }
+  .num-item{
+    text-align:center;padding:36px 18px;
+    border-right:1px solid rgba(255,255,255,.07);
+    transition:background .2s;
+  }
+  .num-item:last-child{border-right:none;}
+  .num-item:hover{background:rgba(255,255,255,.02);}
+  .num-val{font-size:1.875rem;font-weight:800;color:var(--brand);letter-spacing:-.03em;}
+  .num-lbl{font-size:.8rem;color:rgba(255,255,255,.4);margin-top:5px;font-weight:500;}
+
+  /* ─── FAQ ─── */
+  .faq{background:var(--muted);}
+  .faq-list{max-width:680px;margin:0 auto;}
+  .faq-item{
+    background:#fff;border:1px solid var(--border);
+    border-radius:var(--radius-md);margin-bottom:6px;overflow:hidden;
+  }
+  .faq-q{
+    width:100%;text-align:left;background:none;border:none;
+    padding:15px 18px;cursor:pointer;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    font-size:.9375rem;font-weight:600;color:#111;font-family:inherit;
+    transition:background .15s;letter-spacing:-.01em;
+  }
+  .faq-q:hover{background:rgba(0,0,0,.02);}
+  .faq-ic{
+    width:22px;height:22px;border-radius:var(--radius-sm);
+    background:var(--muted);display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;transition:background .2s,transform .25s;
+    font-size:.75rem;color:var(--muted-fg);font-style:normal;
+  }
+  .faq-item.open .faq-ic{background:var(--brand);color:#000;transform:rotate(180deg);}
+  .faq-a{
+    max-height:0;overflow:hidden;
+    transition:max-height .3s ease,padding .3s;
+    font-size:.875rem;color:#4b5563;line-height:1.75;padding:0 18px;
+  }
+  .faq-item.open .faq-a{max-height:260px;padding:0 18px 16px;}
+
+  /* ─── CTA FINAL ─── */
+  .ctaf{
+    background:var(--surface);
+    background-image:radial-gradient(ellipse 70% 65% at 50% 110%,rgba(232,184,0,.12) 0%,transparent 70%);
+    text-align:center;padding:96px 5%;
+  }
+  .ctaf-inner{max-width:660px;margin:0 auto;}
+  .ctaf h2{
+    font-size:clamp(1.5rem,3vw,2.25rem);font-weight:800;color:#fff;
+    margin-bottom:12px;letter-spacing:-.025em;line-height:1.22;
+  }
+  .ctaf-sub{color:rgba(255,255,255,.45);font-size:.9375rem;margin-bottom:28px;line-height:1.65;}
+  .ctaf-pills{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:28px;}
+  .pill{
+    background:rgba(255,255,255,.07);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,.12);
+    color:rgba(255,255,255,.75);font-size:.8125rem;font-weight:600;
+    padding:8px 16px;border-radius:var(--radius-sm);
+    box-shadow:0 8px 32px rgba(0,0,0,.1);
+  }
+
+  /* ─── FOOTER ─── */
+  footer{background:#0a0a0a;padding:64px 5% 0;color:rgba(255,255,255,.5);font-size:.875rem;}
+  .footer-inner{max-width:1140px;margin:0 auto;}
+  .footer-grid{
+    display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:56px;
+    padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.06);
+  }
+  .footer-logo-img{height:120px;width:auto;display:block;object-fit:contain;margin-bottom:16px;}
+  .footer-brand p{line-height:1.75;font-size:.875rem;color:rgba(255,255,255,.4);max-width:275px;}
+  .footer-col h4{color:rgba(255,255,255,.88);font-size:.875rem;font-weight:600;margin-bottom:16px;letter-spacing:-.01em;}
+  .footer-col p,.footer-col a{color:rgba(255,255,255,.42);font-size:.875rem;line-height:2.0;display:block;}
+  .footer-col a:hover{color:var(--brand);}
+  .footer-lbl{
+    font-size:.6875rem;text-transform:uppercase;letter-spacing:.07em;
+    color:rgba(255,255,255,.2);margin-top:14px;margin-bottom:2px;font-weight:600;
+  }
+  .addr-wrap{position:relative;display:inline-block;}
+  .addr-txt{color:rgba(255,255,255,.42);font-size:.875rem;line-height:2.0;cursor:pointer;transition:color .15s;}
+  .addr-txt:hover{color:var(--brand);}
+  .map-tip{
+    position:absolute;bottom:calc(100% + 10px);left:0;width:280px;
+    background:#fff;border-radius:var(--radius-lg);overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,.55);
+    opacity:0;visibility:hidden;
+    transition:opacity .2s,transform .2s;transform:translateY(8px);z-index:200;
+  }
+  .addr-wrap:hover .map-tip{opacity:1;visibility:visible;transform:translateY(0);}
+  .map-tip iframe{width:100%;height:170px;border:none;display:block;}
+  .map-tip .map-lbl{padding:8px 12px;font-size:.75rem;color:#333;}
+  .map-tip .map-lbl a{display:inline;color:#111;font-weight:600;}
+  .social-btns{display:flex;gap:8px;margin-top:18px;}
+  .soc-btn{
+    width:36px;height:36px;border-radius:var(--radius);
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
+    transition:background .15s,border-color .15s;cursor:pointer;
+  }
+  .soc-btn:hover{background:rgba(232,184,0,.14);border-color:rgba(232,184,0,.3);}
+  .soc-btn svg{width:16px;height:16px;}
+  .soc-btn.wpp svg{fill:#25D366;}
+  .soc-btn.insta svg{fill:url(#insta-grad);}
+  .footer-bottom{
+    padding:18px 0;display:flex;align-items:center;justify-content:space-between;
+    font-size:.75rem;color:rgba(255,255,255,.2);
+  }
+  .footer-bottom-links{display:flex;gap:16px;}
+  .footer-bottom-links a{color:rgba(255,255,255,.2);transition:color .15s;}
+  .footer-bottom-links a:hover{color:rgba(255,255,255,.5);}
+
+  .reveal{opacity:0;transform:translateY(30px);transition:all .8s cubic-bezier(.2,1,.3,1);}
+  .reveal.active{opacity:1;transform:translateY(0);}
+
+  /* ─── RESPONSIVE ─── */
+  @media(max-width:1024px){
+    .hero-wrap{grid-template-columns:1fr;max-width:660px;}
+    .hero-visual{display:none;}
+    .hero{text-align:center;}
+    .hero-ctas{justify-content:center;}
+    .hero-trust{justify-content:center;}
+    .hero-sub{margin-left:auto;margin-right:auto;}
+  }
+  @media(max-width:860px){
+    .header-nav{display:none;}
+    .hamburger{display:flex;}
+    .btn-header-desktop{display:none;}
+    .trust-bar-inner{grid-template-columns:repeat(2,1fr);}
+    .trust-item:nth-child(2){border-right:none;}
+    .dor-grid,.steps,.cards-grid,.depo-grid,.porq-grid{grid-template-columns:1fr;}
+    .steps::before{display:none;}
+    .nums-grid{grid-template-columns:repeat(2,1fr);}
+    .num-item:nth-child(2){border-right:none;}
+    .footer-grid{grid-template-columns:1fr;gap:36px;}
+    .card-flip{height:300px;}
+    section{padding:72px 5%;}
+    .footer-bottom{flex-direction:column;gap:10px;text-align:center;}
+    .footer-bottom-links{justify-content:center;}
+  }
+  @media(max-width:480px){
+    .hero{padding:88px 5% 64px;}
+    section{padding:60px 5%;}
+    .dor-box{padding:22px 18px;}
+    .ctaf{padding:72px 5%;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="logo">
+    <img src="novare-assessoria-logo.png" alt="Novare Soluções Financeiras"/>
+  </div>
+  <nav class="header-nav">
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#faq">Dúvidas</a>
+  </nav>
+  <div class="header-right">
+    <a href="https://wa.me/5511921704799?text=Ol%C3%A1%21+Gostaria+de+uma+consulta+gratuita+sobre+meu+contrato." class="btn-header btn-header-desktop" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Consulta gratuita
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<nav class="mobile-menu" id="mobile-menu">
+  <a href="#como-funciona" onclick="closeMenu()">Como funciona</a>
+  <a href="#depoimentos" onclick="closeMenu()">Depoimentos</a>
+  <a href="#faq" onclick="closeMenu()">Dúvidas</a>
+  <a href="https://wa.me/5511921704799?text=Ol%C3%A1%21+Gostaria+de+uma+consulta+gratuita+sobre+meu+contrato." class="btn-mobile" target="_blank" rel="noopener" onclick="closeMenu()">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Consulta gratuita
+  </a>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-wrap">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Consulta 100% Gratuita · Sem Adiantamento
+      </div>
+      <h1>Seu banco cobrou mais do que devia.<br><span class="hl">A Novare prova isso — e ainda negocia a sua saída.</span></h1>
+      <p class="hero-sub">Contratos de financiamento estão cheios de cobranças ilegais que passam despercebidas. Nossa equipe rastreia cada centavo cobrado a mais e confronta o banco com a lei — para que você pague só o que é justo.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/5511921704799?text=Ol%C3%A1%21+Gostaria+de+uma+consulta+gratuita+sobre+meu+contrato." class="btn-primary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Quero descobrir o que me cobraram a mais
+        </a>
+        <a href="#como-funciona" class="btn-ghost">Como a Novare atua</a>
+      </div>
+      <div class="hero-trust">
+        <span class="hero-trust-item">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          Consulta gratuita
+        </span>
+        <span class="hero-trust-item">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          100% online, todo o Brasil
+        </span>
+        <span class="hero-trust-item">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          Retorno em até 2h
+        </span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <dotlottie-wc src="https://lottie.host/018839da-8ea0-4283-bb54-38e6fbfcef8c/PXn4UypRPO.lottie" style="width: 100%; max-width: 600px; height: auto; filter: drop-shadow(0 20px 50px rgba(245,197,24,0.15));" autoplay loop></dotlottie-wc>
+    </div>
+  </div>
+</section>
+
+<!-- ── BARRA DE CONFIANÇA ── -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item reveal" style="transition-delay: 0.1s"><div class="trust-num">800+</div><div class="trust-label">contratos auditados</div></div>
+    <div class="trust-item reveal" style="transition-delay: 0.2s"><div class="trust-num">R$ 8 mi</div><div class="trust-label">recuperados para clientes</div></div>
+    <div class="trust-item reveal" style="transition-delay: 0.3s"><div class="trust-num">Até 80%</div><div class="trust-label">de desconto conquistado</div></div>
+    <div class="trust-item reveal" style="transition-delay: 0.4s"><div class="trust-num">CNPJ</div><div class="trust-label">63.811.122/0001-88</div></div>
+  </div>
+</div>
+
+<!-- ── SEÇÃO DOR ── -->
+<section class="dor">
+  <div class="dor-grid">
+    <div>
+      <div class="dor-eyebrow">Reconhece alguma dessas situações?</div>
+      <h2 class="stitle">O banco pode estar te cobrando além do que a lei permite</h2>
+      <ul class="dor-list">
+        <li>
+          <div class="dor-ic"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" fill="#92400e"/></svg></div>
+          Você paga há meses e a dívida continua quase a mesma
+        </li>
+        <li>
+          <div class="dor-ic"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" fill="#92400e"/></svg></div>
+          O total a pagar já ultrapassou em muito o valor do bem
+        </li>
+        <li>
+          <div class="dor-ic"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" fill="#92400e"/></svg></div>
+          Recebeu carta de ameaça, negativação ou busca e apreensão
+        </li>
+        <li>
+          <div class="dor-ic"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" fill="#92400e"/></svg></div>
+          Sente que foi mal informado na hora de assinar o contrato
+        </li>
+        <li>
+          <div class="dor-ic"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" fill="#92400e"/></svg></div>
+          Tentou renegociar com o banco e não chegou a lugar nenhum
+        </li>
+      </ul>
+    </div>
+    <div class="dor-box">
+      <h3>Essas situações têm solução — e a Novare está pronta para encontrá-la.</h3>
+      <p>Preencha o formulário abaixo. Nossa equipe entra em contato, avalia seu caso sem custo nenhum e te mostra o caminho mais rápido para sair dessa.</p>
+      <form class="dor-form" onsubmit="submitForm(event)">
+        <div class="dor-form-row">
+          <div class="form-field">
+            <label class="form-label" for="f-nome">Nome completo</label>
+            <input class="form-input" type="text" id="f-nome" name="nome" placeholder="Seu nome" required/>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="f-tel">WhatsApp</label>
+            <input class="form-input" type="tel" id="f-tel" name="telefone" placeholder="(11) 90000-0000" required/>
+          </div>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="f-email">E-mail <span style="color:var(--muted-fg);font-weight:400">(opcional)</span></label>
+          <input class="form-input" type="email" id="f-email" name="email" placeholder="seu@email.com"/>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="f-tipo">Qual contrato você quer revisar?</label>
+          <select class="form-select" id="f-tipo" name="tipo" required>
+            <option value="" disabled selected>Selecione o tipo</option>
+            <option value="veiculo">Financiamento de veículo</option>
+            <option value="imovel">Financiamento imobiliário</option>
+            <option value="emprestimo">Empréstimo pessoal ou consignado</option>
+            <option value="outro">Outro tipo de crédito</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-form">Solicitar consulta gratuita →</button>
+        <p class="dor-form-note">
+          <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+          Seus dados são sigilosos. Retorno em até 2h úteis.
+        </p>
+      </form>
+      <div class="dor-form-success" id="form-success">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="#E8B800"/></svg>
+        <p>Solicitação recebida! Entraremos em contato em breve.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── COMO FUNCIONA ── -->
+<section class="como" id="como-funciona">
+  <div class="sec-head">
+    <div class="sec-eyebrow">Como a Novare atua</div>
+    <h2 class="stitle">Da auditoria ao desconto: entenda o nosso processo</h2>
+    <p class="ssub cx">Trabalhamos de forma direta e transparente. Você fica informado em cada etapa — sem juridiquês, sem enrolação.</p>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Auditoria do contrato</h3>
+      <p>Você nos envia o contrato pelo WhatsApp. Nossa equipe faz uma varredura técnica em busca de taxas ilegais, cobranças duplicadas e cláusulas que ferem o Código de Defesa do Consumidor.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Laudo e estratégia</h3>
+      <p>Com os problemas identificados, montamos um laudo detalhado e apresentamos a você as opções: redução de parcelas, quitação com desconto ou ressarcimento dos valores pagos a mais.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Negociação e resultado</h3>
+      <p>Levamos o laudo diretamente à instituição financeira e conduzimos a negociação até o acordo. Você aprova o resultado — e só então nossa remuneração é definida.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── ESPECIALIDADES ── -->
+<section class="espec">
+  <div class="sec-head">
+    <div class="sec-eyebrow">Áreas de atuação</div>
+    <h2 class="stitle">Em quais contratos a Novare pode ajudar?</h2>
+    <p class="ssub cx">Passe o mouse — ou toque — para ver como atuamos em cada tipo de dívida.</p>
+  </div>
+  <div class="cards-grid">
+    <div class="card-flip" ontouchstart="toggleFlip(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80" alt="Revisão de financiamento de veículo" loading="lazy" decoding="async"/>
+
+          <div class="card-front-ov"><h3>Veículos financiados</h3><p>Carro, moto, caminhão ou van</p></div>
+        </div>
+        <div class="card-back">
+          <h3>Veículos financiados</h3>
+          <p>Taxas de juros acima do teto do Banco Central, IOF recalculado indevidamente, seguro obrigatório embutido sem consentimento — identificamos tudo e usamos isso na negociação para reduzir ou quitar com desconto expressivo.</p>
+          <a href="https://wa.me/5511921704799?text=Quero+auditar+meu+financiamento+de+ve%C3%ADculo." class="cbtn" target="_blank" rel="noopener">Auditar meu veículo →</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-flip" ontouchstart="toggleFlip(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="imovel_financiado.png" alt="Revisão de financiamento imobiliário" loading="lazy" decoding="async"/>
+
+          <div class="card-front-ov"><h3>Imóvel financiado</h3><p>Casa, apartamento ou sala comercial</p></div>
+        </div>
+        <div class="card-back">
+          <h3>Imóvel financiado</h3>
+          <p>Aplicação incorreta de índices como TR e IPCA, capitalização de juros proibida, seguros inflados e cobrança dupla de tarifas administrativas. Irregularidades assim podem reduzir seu saldo devedor em dezenas de milhares de reais.</p>
+          <a href="https://wa.me/5511921704799?text=Quero+auditar+meu+financiamento+imobili%C3%A1rio." class="cbtn" target="_blank" rel="noopener">Auditar meu imóvel →</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-flip" ontouchstart="toggleFlip(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="emprestimos_credito.png" alt="Revisão de empréstimos e crédito pessoal" loading="lazy" decoding="async"/>
+
+          <div class="card-front-ov"><h3>Empréstimos e crédito</h3><p>Consignado, pessoal ou cartão</p></div>
+        </div>
+        <div class="card-back">
+          <h3>Empréstimos e crédito</h3>
+          <p>Tarifas de cadastro e abertura de crédito ilegais, spread bancário acima da média do mercado, cobrança de produtos vinculados não solicitados — revisamos tudo e buscamos ressarcimento ou renegociação justa.</p>
+          <a href="https://wa.me/5511921704799?text=Quero+auditar+meu+empr%C3%A9stimo+ou+cr%C3%A9dito." class="cbtn" target="_blank" rel="noopener">Auditar meu empréstimo →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MISSÃO ── -->
+<section class="missao">
+  <div class="missao-inner">
+    <div class="sec-eyebrow">Quem somos</div>
+    <h2 class="stitle">A Novare foi construída para quem o banco não ouviu</h2>
+    <div class="missao-divider"></div>
+    <p class="missao-quote">Toda semana, brasileiros assinam contratos sem entender o que está escrito nas letras miúdas — e pagam por isso durante anos. A Novare Soluções Financeiras existe para mudar essa equação. Somos especialistas em identificar cobranças fora da lei em contratos de financiamento e crédito, e em transformar esse conhecimento em poder de negociação real. Não prometemos milagres. Prometemos transparência, técnica e dedicação para conseguir a melhor saída possível para cada caso. Com sede em Santo André, SP, atendemos clientes em todo o Brasil de forma 100% digital.</p>
+  </div>
+</section>
+
+<!-- ── POR QUE ESCOLHER ── -->
+<section class="porq">
+  <div class="sec-head">
+    <div class="sec-eyebrow">Nossos diferenciais</div>
+    <h2 class="stitle">O que faz a Novare diferente das demais</h2>
+  </div>
+  <div class="porq-grid">
+    <div class="porq-card">
+      <div class="porq-icon"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="var(--brand)"/></svg></div>
+      <h3>Auditoria técnica de verdade</h3>
+      <p>Não fazemos promessa sem base. Antes de qualquer passo, auditamos seu contrato com rigor técnico e mostramos por escrito o que encontramos — você decide o que fazer com essa informação.</p>
+    </div>
+    <div class="porq-card">
+      <div class="porq-icon"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z" fill="var(--brand)"/></svg></div>
+      <h3>Remuneração atrelada ao resultado</h3>
+      <p>Cobramos apenas quando você economiza. Não existe taxa de cadastro, relatório pago ou avaliação cobrada. Se não houver ganho concreto para você, não há custo nenhum.</p>
+    </div>
+    <div class="porq-card">
+      <div class="porq-icon"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.61.02-.95.05 1.16.84 1.95 1.99 1.95 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="var(--brand)"/></svg></div>
+      <h3>Time especializado, não generalista</h3>
+      <p>Nossa equipe atua exclusivamente com revisão e negociação de contratos financeiros. Isso significa profundidade real no assunto — não um atendimento genérico que trata tudo da mesma forma.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:40px;">
+    <a href="https://wa.me/5511921704799?text=Ol%C3%A1%21+Gostaria+de+uma+consulta+gratuita+sobre+meu+contrato." class="btn-primary" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Falar com um especialista agora
+    </a>
+  </div>
+</section>
+
+<!-- ── DEPOIMENTOS ── -->
+<section class="depo" id="depoimentos">
+  <div class="sec-head">
+    <div class="sec-eyebrow">Casos reais</div>
+    <h2 class="stitle">Clientes que a Novare ajudou a virar o jogo</h2>
+    <p class="ssub cx">Cada história aqui é real. Cada número foi conquistado com trabalho técnico — não com sorte.</p>
+  </div>
+  <div class="depo-grid">
+
+    <div class="depo-card feat">
+      <span class="feat-badge">Transformação do mês</span>
+      <div class="depo-hdr">
+        <div class="depo-av" style="background:#1a1a1a;">F</div>
+        <div>
+          <div class="depo-name">Fernanda</div>
+          <div class="depo-meta">São Bernardo do Campo, SP · Sandero financiado</div>
+        </div>
+      </div>
+      <div class="stars">★★★★★</div>
+      <div class="depo-saving">Parcela caiu de R$ 980 para R$ 490 por mês</div>
+      <p class="depo-txt">"Eu achava que era normal pagar aquele valor todo mês. A Novare me mostrou que tinha dois seguros embutidos que eu nunca contratei. Em menos de 30 dias a parcela caiu pela metade. Não consigo acreditar que passei dois anos pagando errado."</p>
+    </div>
+
+    <div class="depo-card">
+      <div class="depo-hdr">
+        <div class="depo-av" style="background:#14532d;">R</div>
+        <div>
+          <div class="depo-name">Rodrigo</div>
+          <div class="depo-meta">Santo André, SP · Apartamento financiado</div>
+        </div>
+      </div>
+      <div class="stars">★★★★★</div>
+      <div class="depo-saving">R$ 43.000 retirados do saldo devedor</div>
+      <p class="depo-txt">"Meu financiamento estava com aplicação errada da TR há 6 anos. A Novare identificou isso, entrou em contato com o banco e conseguiu retirar mais de R$43 mil do saldo devedor. Minha previsão de quitação caiu quase 4 anos."</p>
+    </div>
+
+    <div class="depo-card">
+      <div class="depo-hdr">
+        <div class="depo-av" style="background:#7c2d12;">T</div>
+        <div>
+          <div class="depo-name">Tatiane</div>
+          <div class="depo-meta">Guarulhos, SP · Empréstimo consignado</div>
+        </div>
+      </div>
+      <div class="stars">★★★★★</div>
+      <div class="depo-saving">Devolução de R$ 6.200 cobrados ilegalmente</div>
+      <p class="depo-txt">"Descobri com a Novare que o banco tinha me cobrado tarifa de abertura de crédito que é proibida por lei. Além de parar as cobranças, consegui de volta mais de R$6 mil. O processo todo foi tranquilo — eles cuidaram de tudo por mim."</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── NÚMEROS ── -->
+<section class="nums">
+  <div class="nums-inner">
+    <h2 class="stitle stitle-w">A Novare em números</h2>
+    <p class="ssub cx">Resultados construídos caso a caso, cliente a cliente.</p>
+    <div class="nums-grid">
+      <div class="num-item"><div class="num-val reveal" style="transition-delay: 0.1s">800+</div><div class="num-lbl">Contratos auditados</div></div>
+      <div class="num-item"><div class="num-val reveal" style="transition-delay: 0.2s">R$ 8 M+</div><div class="num-lbl">Recuperados para clientes</div></div>
+      <div class="num-item"><div class="num-val reveal" style="transition-delay: 0.3s">3+</div><div class="num-lbl">Anos de especialização</div></div>
+      <div class="num-item"><div class="num-val reveal" style="transition-delay: 0.4s">Até 80%</div><div class="num-lbl">Desconto conquistado</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq" id="faq">
+  <div class="sec-head">
+    <div class="sec-eyebrow">Tire suas dúvidas</div>
+    <h2 class="stitle">Perguntas que recebemos com frequência</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Como a Novare encontra cobranças ilegais no meu contrato? <span class="faq-ic">↓</span></button>
+      <div class="faq-a">Nossa equipe compara cada cláusula do seu contrato com a legislação bancária vigente — incluindo resoluções do Banco Central, o Código de Defesa do Consumidor e a jurisprudência mais recente dos tribunais. Usamos essa análise para identificar taxas fora do limite legal, produtos embutidos não autorizados e cobranças duplicadas que muitas vezes passam despercebidas pelo próprio cliente.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Quanto custa a consulta inicial? <span class="faq-ic">↓</span></button>
+      <div class="faq-a">A consulta e a auditoria inicial são completamente gratuitas. Só cobramos quando existe resultado concreto para você — seja desconto na quitação, redução de parcelas ou devolução de valores pagos a mais. Sem resultado, sem custo.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Quanto tempo leva o processo do início ao fim? <span class="faq-ic">↓</span></button>
+      <div class="faq-a">A auditoria inicial leva em média 24 a 48 horas úteis após o recebimento dos documentos. A partir daí, o prazo para negociação com a instituição financeira varia conforme a complexidade do caso e a receptividade do banco — mas mantemos você atualizado em cada etapa do processo.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">A Novare pode me ajudar mesmo com negativação ou processo de busca e apreensão? <span class="faq-ic">↓</span></button>
+      <div class="faq-a">Sim. Situações de inadimplência, negativação e busca e apreensão são justamente onde nossa atuação faz mais diferença. Quanto mais urgente a situação, mais importante agir rapidamente — entre em contato hoje pelo WhatsApp para que possamos avaliar as opções disponíveis no seu caso.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Moro fora de Santo André. A Novare consegue me atender? <span class="faq-ic">↓</span></button>
+      <div class="faq-a">Sim, sem nenhum problema. Todo o nosso atendimento é digital — documentos são enviados pelo WhatsApp ou e-mail, as reuniões acontecem por chamada de vídeo ou áudio, e o processo de negociação é conduzido remotamente. Atendemos clientes em todos os estados do Brasil.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA FINAL ── -->
+<section class="ctaf">
+  <div class="ctaf-inner">
+    <h2>O banco não vai te ligar para dizer que cobrou errado.<br><span style="color:var(--brand)">Mas a Novare vai descobrir.</span></h2>
+    <p class="ctaf-sub">Consulta gratuita · Processo 100% digital · Você só paga se economizar · Atendemos todo o Brasil</p>
+    <div class="ctaf-pills">
+      <span class="pill reveal" style="transition-delay: 0.1s">Consulta gratuita</span>
+      <span class="pill reveal" style="transition-delay: 0.2s">Retorno em até 2h</span>
+      <span class="pill reveal" style="transition-delay: 0.3s">Sem adiantamento</span>
+      <span class="pill reveal" style="transition-delay: 0.4s">Todo o Brasil</span>
+    </div>
+    <a href="https://wa.me/5511921704799?text=Ol%C3%A1%21+Gostaria+de+uma+consulta+gratuita+sobre+meu+contrato." class="btn-primary" target="_blank" rel="noopener" style="display:inline-flex;">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Quero minha consulta gratuita agora
+    </a>
+  </div>
+</section>
+
+<!-- ── RODAPÉ ── -->
+<footer>
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <linearGradient id="insta-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#f09433"/><stop offset="25%" stop-color="#e6683c"/>
+        <stop offset="50%" stop-color="#dc2743"/><stop offset="75%" stop-color="#cc2366"/>
+        <stop offset="100%" stop-color="#bc1888"/>
+      </linearGradient>
+    </defs>
+  </svg>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="novare-assessoria-logo.png" alt="Novare Soluções Financeiras" class="footer-logo-img"/>
+        <p>Auditoria e negociação de contratos financeiros. Identificamos o que o banco cobrou além da lei — e colocamos esse dinheiro de volta no seu bolso.</p>
+        <div class="social-btns">
+          <a href="javascript:void(0)" class="soc-btn insta" title="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/5511921704799?text=Ol%C3%A1%21+Gostaria+de+uma+consulta+gratuita+sobre+meu+contrato." target="_blank" rel="noopener" class="soc-btn wpp" title="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Fale com a Novare</h4>
+        <p class="footer-lbl">E-MAIL</p>
+        <a href="mailto:solucoesnovare@gmail.com">solucoesnovare@gmail.com</a>
+        <p class="footer-lbl">WHATSAPP</p>
+        <a href="https://wa.me/5511921704799" target="_blank" rel="noopener">(11) 92170-4799</a>
+        <p class="footer-lbl">ATENDIMENTO</p>
+        <p>Segunda a Sexta · 9h às 18h</p>
+      </div>
+      <div class="footer-col">
+        <h4>Informações</h4>
+        <div class="addr-wrap">
+          <span class="addr-txt">Av. Artur de Queirós, 287<br>Casa Branca · Santo André — SP<br>CEP 09015-510</span>
+          <div class="map-tip">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.5!2d-46.5338!3d-23.6691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42f4b0e3c3b3%3A0x0!2sAv.+Artur+de+Queirós%2C+287%2C+Casa+Branca%2C+Santo+André+-+SP!5e0!3m2!1spt-BR!2sbr!4v1" allowfullscreen="" loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-lbl">Av. Artur de Queirós, 287 · Santo André &nbsp;—&nbsp; <a href="https://maps.google.com/?q=Av.+Artur+de+Queirós,+287,+Casa+Branca,+Santo+André,+SP" target="_blank" rel="noopener">Abrir no Maps ↗</a></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Novare Soluções Financeiras · CNPJ 63.811.122/0001-88 · 2026. © Direitos reservados à D.A.R.K Company LTDA.</span>
+      <div class="footer-bottom-links">
+        <a href="politica-de-privacidade.html">Privacidade</a>
+        <a href="termos-de-uso.html">Termos</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function faq(btn) {
+    const item = btn.parentElement;
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!open) item.classList.add('open');
+  }
+
+  function submitForm(e) {
+    e.preventDefault();
+    const f = e.target;
+    const nome = f.nome.value.trim();
+    const tel  = f.telefone.value.trim();
+    const tipoMap = {
+      veiculo:   'financiamento de veículo',
+      imovel:    'financiamento imobiliário',
+      emprestimo:'empréstimo pessoal ou consignado',
+      outro:     'outro tipo de crédito'
+    };
+    const tipo = tipoMap[f.tipo.value] || f.tipo.value;
+    const msg  = encodeURIComponent(
+      `Olá! Me chamo ${nome} e gostaria de uma consulta gratuita sobre meu ${tipo}. Meu WhatsApp é ${tel}.`
+    );
+    window.open(`https://wa.me/5511921704799?text=${msg}`, '_blank');
+    f.style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+  }
+
+  function toggleFlip(card) {
+    card.classList.toggle('flipped');
+  }
+
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+
+  function closeMenu() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  }
+
+  // Efeito de revelação no scroll
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+</script>
+</body>
+</html>

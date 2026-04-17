@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+*.log
+.gemini/
+brain/
+artifacts/
+scratch/
+mcp_servers/
+node_modules/
+dist/
+build/
+.env
+.vscode/
+.history/
