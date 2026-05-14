@@ -5,26 +5,290 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Política de Cancelamento e Estornos — Novare Soluções Financeiras</title>
 <link rel="icon" type="image/jpeg" href="favicon.jpg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
-  :root { --amarelo:#FFEA00; --cinza-dark:#1c1c1c; --cinza-esc:#2e2e2e; --texto:#1a1a1a; --texto-sec:#555; }
+  :root {
+    --amarelo: #FFEA00;
+    --amarelo-soft: rgba(255,234,0,.10);
+    --amarelo-mid: rgba(255,234,0,.22);
+    --cinza-dark: #1c1c1c;
+    --cinza-esc: #2e2e2e;
+    --texto: #1a1a1a;
+    --texto-sec: #555;
+    --borda: #e8e8e8;
+    --fundo-sec: #f9f9f7;
+  }
+
   *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family:'Segoe UI', Arial, sans-serif; color:var(--texto); background:#fff; }
-  a { color:var(--cinza-esc); }
+
+  body {
+    font-family: 'DM Sans', 'Segoe UI', Arial, sans-serif;
+    color: var(--texto);
+    background: #fff;
+  }
+
+  a { color: var(--cinza-esc); transition: color .2s; }
+  a:hover { color: #000; }
+
+  /* ── HEADER ── */
   header {
-    background:rgba(28,28,28,.97); padding:0 6%; height:100px;
-    display:flex; align-items:center; justify-content:space-between;
-    border-bottom:1px solid rgba(245,197,24,.12);
+    background: rgba(28,28,28,.97);
+    padding: 0 6%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(245,197,24,.12);
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
   .logo img { height:80px; width:auto; display:block; object-fit:contain; filter:brightness(1.8); }
-  .back-link { color:var(--amarelo); font-size:.88rem; font-weight:700; text-decoration:none; }
-  .back-link:hover { text-decoration:underline; }
-  main { max-width:760px; margin:0 auto; padding:60px 6% 80px; }
-  h1 { font-size:1.8rem; font-weight:800; color:var(--cinza-esc); margin-bottom:8px; }
-  .updated { font-size:.82rem; color:var(--texto-sec); margin-bottom:40px; }
-  h2 { font-size:1.1rem; font-weight:700; color:var(--cinza-esc); margin:32px 0 10px; }
-  p, li { font-size:.97rem; color:var(--texto-sec); line-height:1.8; margin-bottom:10px; }
-  ul { padding-left:20px; }
-  .footer-note { text-align:center; padding:24px 6%; font-size:.77rem; color:var(--texto-sec); border-top:1px solid #e8e8e8; margin-top:40px; }
+  .back-link {
+    color: var(--amarelo);
+    font-size: .85rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: .03em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .back-link:hover { color: #fff; }
+
+  /* ── HERO BANNER ── */
+  .hero {
+    background: var(--cinza-dark);
+    padding: 64px 6% 56px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 3px;
+    background: var(--amarelo);
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    right: -60px; top: -60px;
+    width: 280px; height: 280px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,234,0,.08);
+  }
+  .hero-inner { max-width: 760px; margin: 0 auto; position: relative; }
+  .hero-tag {
+    display: inline-block;
+    background: var(--amarelo-mid);
+    color: var(--amarelo);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 14px;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--amarelo);
+  }
+  .hero-sub {
+    font-size: .85rem;
+    color: rgba(255,255,255,.4);
+    letter-spacing: .02em;
+  }
+
+  /* ── MAIN CONTENT ── */
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 64px 6% 100px;
+  }
+
+  /* ── SECTION CARD ── */
+  .section {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 0 24px;
+    padding: 36px 0;
+    border-bottom: 1px solid var(--borda);
+    animation: fadeUp .5s both;
+  }
+  .section:last-of-type { border-bottom: none; }
+  @keyframes fadeUp {
+    from { opacity:0; transform:translateY(14px); }
+    to   { opacity:1; transform:translateY(0); }
+  }
+  .section:nth-child(1) { animation-delay:.05s; }
+  .section:nth-child(2) { animation-delay:.10s; }
+  .section:nth-child(3) { animation-delay:.15s; }
+  .section:nth-child(4) { animation-delay:.20s; }
+  .section:nth-child(5) { animation-delay:.25s; }
+  .section:nth-child(6) { animation-delay:.30s; }
+  .section:nth-child(7) { animation-delay:.35s; }
+
+  .section-num {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 2.2rem;
+    color: var(--amarelo);
+    line-height: 1;
+    padding-top: 2px;
+    user-select: none;
+  }
+
+  .section-body h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--cinza-esc);
+    margin-bottom: 12px;
+    letter-spacing: -.01em;
+  }
+
+  .section-body p,
+  .section-body li {
+    font-size: .96rem;
+    color: var(--texto-sec);
+    line-height: 1.85;
+    margin-bottom: 8px;
+  }
+
+  .section-body ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+  }
+  .section-body ul li {
+    padding: 6px 0 6px 20px;
+    position: relative;
+    margin-bottom: 2px;
+  }
+  .section-body ul li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 50%;
+    transform: translateY(-50%);
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--amarelo);
+  }
+
+  /* ── HIGHLIGHT BOX (prazos) ── */
+  .highlight-box {
+    background: var(--fundo-sec);
+    border-left: 3px solid var(--amarelo);
+    border-radius: 0 6px 6px 0;
+    padding: 20px 22px;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .highlight-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .highlight-icon {
+    width: 36px; height: 36px;
+    background: var(--amarelo-mid);
+    border-radius: 6px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .highlight-icon svg { width:18px; height:18px; fill:none; stroke:var(--cinza-dark); stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .highlight-text strong {
+    display: block;
+    font-size: .92rem;
+    font-weight: 700;
+    color: var(--texto);
+    margin-bottom: 2px;
+  }
+  .highlight-text span {
+    font-size: .86rem;
+    color: var(--texto-sec);
+    line-height: 1.6;
+  }
+
+  /* ── CONTACT CARDS ── */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .contact-card {
+    background: var(--fundo-sec);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 16px 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: border-color .2s, box-shadow .2s;
+  }
+  .contact-card:hover {
+    border-color: var(--amarelo);
+    box-shadow: 0 0 0 3px var(--amarelo-soft);
+    color: inherit;
+  }
+  .contact-icon {
+    width: 36px; height: 36px;
+    background: var(--amarelo-mid);
+    border-radius: 6px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-icon svg { width:18px; height:18px; fill:none; stroke:var(--cinza-dark); stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .contact-label { font-size: .72rem; color: var(--texto-sec); letter-spacing:.04em; text-transform:uppercase; margin-bottom:2px; }
+  .contact-val { font-size: .88rem; font-weight:600; color: var(--texto); }
+
+  /* ── ADDRESS CARD (full width) ── */
+  .address-card {
+    margin-top: 12px;
+    background: var(--fundo-sec);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .address-card .contact-val { font-size: .86rem; font-weight:400; color:var(--texto-sec); }
+
+  /* ── FOOTER ── */
+  .footer-note {
+    text-align: center;
+    padding: 28px 6%;
+    font-size: .77rem;
+    color: #aaa;
+    background: var(--cinza-dark);
+    margin-top: 0;
+  }
+
+  @media(max-width:580px) {
+    .section { grid-template-columns: 36px 1fr; gap: 0 14px; }
+    .section-num { font-size: 1.7rem; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .hero { padding: 48px 6% 40px; }
+  }
 </style>
 </head>
 <body>
@@ -33,56 +297,156 @@
   <div class="logo">
     <img src="novare-assessoria-logo.png" alt="Novare Soluções Financeiras"/>
   </div>
-  <a href="index.html" class="back-link">← Voltar ao site</a>
+  <a href="index.html" class="back-link">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    Voltar ao site
+  </a>
 </header>
 
+<div class="hero">
+  <div class="hero-inner">
+    <span class="hero-tag">Transparência &amp; Confiança</span>
+    <h1>Política de Cancelamento<br/>e <em>Estornos</em></h1>
+    <p class="hero-sub">Última atualização: maio de 2026</p>
+  </div>
+</div>
+
 <main>
-  <h1>Política de Cancelamento e Estornos</h1>
-  <p class="updated">Última atualização: maio de 2026</p>
 
-  <h2>1. Natureza dos Serviços</h2>
-  <p>Os serviços prestados pela <strong>Novare Soluções Financeiras</strong> são de natureza consultiva, podendo envolver análise técnica, elaboração de documentos e acompanhamento de demandas.</p>
+  <div class="section">
+    <span class="section-num">1</span>
+    <div class="section-body">
+      <h2>Natureza dos Serviços</h2>
+      <p>Os serviços prestados pela <strong>Novare Soluções Financeiras</strong> são de natureza consultiva, podendo envolver análise técnica, elaboração de documentos e acompanhamento de demandas.</p>
+    </div>
+  </div>
 
-  <h2>2. Cancelamento</h2>
-  <p>O cancelamento poderá ser solicitado a qualquer momento, mediante contato pelos canais oficiais:</p>
-  <ul>
-    <li><strong>E-mail:</strong> <a href="mailto:solucoesnovare@gmail.com">solucoesnovare@gmail.com</a></li>
-    <li><strong>WhatsApp:</strong> <a href="https://wa.me/5511921704799" target="_blank">(11) 92170-4799</a></li>
-  </ul>
+  <div class="section">
+    <span class="section-num">2</span>
+    <div class="section-body">
+      <h2>Cancelamento</h2>
+      <p>O cancelamento poderá ser solicitado a qualquer momento, mediante contato pelos canais oficiais:</p>
+      <div class="contact-grid">
+        <a href="mailto:solucoesnovare@gmail.com" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">E-mail</div>
+            <div class="contact-val">solucoesnovare@gmail.com</div>
+          </div>
+        </a>
+        <a href="https://wa.me/5511921704799" target="_blank" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">WhatsApp</div>
+            <div class="contact-val">(11) 92170-4799</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 
-  <h2>3. Estornos</h2>
-  <p>O estorno de valores poderá ocorrer nas seguintes hipóteses:</p>
-  <ul>
-    <li>Não prestação do serviço contratado;</li>
-    <li>Cobrança indevida;</li>
-    <li>Cancelamento dentro do prazo legal aplicável.</li>
-  </ul>
+  <div class="section">
+    <span class="section-num">3</span>
+    <div class="section-body">
+      <h2>Estornos</h2>
+      <p>O estorno de valores poderá ocorrer nas seguintes hipóteses:</p>
+      <ul>
+        <li>Não prestação do serviço contratado</li>
+        <li>Cobrança indevida</li>
+        <li>Cancelamento dentro do prazo legal aplicável</li>
+      </ul>
+    </div>
+  </div>
 
-  <h2>4. Prazo</h2>
-  <p>Os estornos serão processados no prazo de até:</p>
-  <ul>
-    <li><strong>7 dias úteis</strong>, quando pagos via boleto ou transferência;</li>
-    <li><strong>Conforme regras da operadora</strong>, para pagamentos via cartão de crédito.</li>
-  </ul>
+  <div class="section">
+    <span class="section-num">4</span>
+    <div class="section-body">
+      <h2>Prazo</h2>
+      <p>Os estornos serão processados no prazo de até:</p>
+      <div class="highlight-box">
+        <div class="highlight-item">
+          <div class="highlight-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="highlight-text">
+            <strong>7 dias úteis</strong>
+            <span>Para pagamentos via boleto ou transferência bancária</span>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">
+            <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <div class="highlight-text">
+            <strong>Conforme a operadora</strong>
+            <span>Para pagamentos realizados via cartão de crédito</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <h2>5. Forma de Estorno</h2>
-  <p>O estorno será realizado:</p>
-  <ul>
-    <li>Na mesma forma de pagamento utilizada;</li>
-    <li>Ou por meio acordado entre as partes.</li>
-  </ul>
+  <div class="section">
+    <span class="section-num">5</span>
+    <div class="section-body">
+      <h2>Forma de Estorno</h2>
+      <p>O estorno será realizado:</p>
+      <ul>
+        <li>Na mesma forma de pagamento utilizada</li>
+        <li>Ou por meio acordado entre as partes</li>
+      </ul>
+    </div>
+  </div>
 
-  <h2>6. Serviços já Iniciados</h2>
-  <p>Caso o serviço já tenha sido iniciado, poderá haver retenção proporcional ao trabalho realizado.</p>
+  <div class="section">
+    <span class="section-num">6</span>
+    <div class="section-body">
+      <h2>Serviços já Iniciados</h2>
+      <p>Caso o serviço já tenha sido iniciado, poderá haver retenção proporcional ao trabalho realizado.</p>
+    </div>
+  </div>
 
-  <h2>7. Disposições Gerais</h2>
-  <p>Cada solicitação será analisada individualmente, respeitando a legislação aplicável e os termos contratuais.</p>
-  <p>Para dúvidas ou solicitações, entre em contato:</p>
-  <ul>
-    <li><strong>E-mail:</strong> <a href="mailto:solucoesnovare@gmail.com">solucoesnovare@gmail.com</a></li>
-    <li><strong>WhatsApp:</strong> <a href="https://wa.me/5511921704799" target="_blank">(11) 92170-4799</a></li>
-    <li><strong>Endereço:</strong> Av. Artur de Queirós, 287 — Casa Branca, Santo André — SP, CEP 09015-510</li>
-  </ul>
+  <div class="section">
+    <span class="section-num">7</span>
+    <div class="section-body">
+      <h2>Disposições Gerais</h2>
+      <p>Cada solicitação será analisada individualmente, respeitando a legislação aplicável e os termos contratuais. Para dúvidas ou solicitações, entre em contato:</p>
+      <div class="contact-grid">
+        <a href="mailto:solucoesnovare@gmail.com" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">E-mail</div>
+            <div class="contact-val">solucoesnovare@gmail.com</div>
+          </div>
+        </a>
+        <a href="https://wa.me/5511921704799" target="_blank" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">WhatsApp</div>
+            <div class="contact-val">(11) 92170-4799</div>
+          </div>
+        </a>
+      </div>
+      <div class="address-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Endereço</div>
+          <div class="contact-val">Av. Artur de Queirós, 287 — Casa Branca, Santo André — SP, CEP 09015-510</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </main>
 
 <div class="footer-note">
